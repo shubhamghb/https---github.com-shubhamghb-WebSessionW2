@@ -43,6 +43,20 @@
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
+    position: relative;
+}
+.navbar ul li::after{
+    content:"";
+    width: 0;
+    height: 4px;
+    background: cyan;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
 .navbar ul li a{
     text-decoration: none;
